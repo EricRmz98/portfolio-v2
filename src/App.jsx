@@ -9,11 +9,27 @@ function App() {
 
   return (
     <>
-      <div className={isThemeDark ? 'home-background home-dark-background' : 'home-background home-light-background'}>
+
+      <div
+        className={
+          isThemeDark ?
+            'home-background home-dark-background'
+            :
+            'home-background home-light-background'
+        }
+      >
+
         <div className='home-buttons-container'>
 
           <div className='theme-switch'>
-            <p className='theme-switch-icon' style={{ color: '#FE8049' }}><i className="fa-solid fa-sun"></i></p>
+
+            <p
+              className='theme-switch-icon'
+              style={{ color: '#FE8049' }}
+            >
+              <i className="fa-solid fa-sun"></i>
+            </p>
+
             <label className="switch">
               <input
                 type="checkbox"
@@ -22,20 +38,35 @@ function App() {
               />
               <span className="slider"></span>
             </label>
-            <p className='theme-switch-icon' style={{ color: '#090D19' }}><i className="fa-solid fa-moon"></i></p>
+
+            <p
+              className='theme-switch-icon'
+              style={{ color: '#090D19' }}
+            >
+              <i className="fa-solid fa-moon"></i>
+            </p>
+
           </div>
 
           <a
-            className={isThemeDark ? 'curriculum-button curriculum-dark-button' : 'curriculum-button curriculum-light-button'}
+            className={
+              isThemeDark ?
+                'curriculum-button curriculum-dark-button'
+                :
+                'curriculum-button curriculum-light-button'
+            }
             href={curriculumVitae}
             download="Eric Ramirez CV"
           >
             <i class="fa-solid fa-file green-txt"></i> Currículum
           </a>
+
         </div>
 
         <div className='name-container'>
+
           <div className='display-flex justify-content-between'>
+            
             <h1
               className='margin-0'
               style={isThemeDark ? { color: '#F9FFFF' } : { color: '#7F002E' }}
@@ -44,8 +75,11 @@ function App() {
             </h1>
 
             <div className='text-end job'>
+
               <h2 className='margin-0 green-txt'>Desarrollador Frontend</h2>
+
             </div>
+
           </div>
 
           <h1
@@ -54,10 +88,21 @@ function App() {
           >
             RAMÍREZ
           </h1>
+
         </div>
+
       </div>
 
+      <div
+      className={
+        isThemeDark ?
+          'about-me-background about-me-dark-background'
+          :
+          'about-me-background about-me-light-background'
+      }
+      >
 
+      </div>
 
     </>
   )
