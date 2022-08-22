@@ -1,0 +1,67 @@
+/* home */
+
+.home-background{
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.home-light-background{
+  background-image: url('./assets/forestDay.png');
+  background-color: #FFDCC6;
+}
+
+.home-dark-background{
+  background-image: url('./assets/forestNight.jpg');
+  background-color: #3154A5;
+}
+
+.home-buttons-container{
+  display: flex;
+  padding-left: 1rem;
+}
+
+.theme-switch{
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-icon{
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+.curriculum-button{
+  margin-top: 1.9rem;
+  margin-left: 1rem;
+  padding: .33rem 1rem 0 1rem;
+  border-radius: 1.8rem;
+}
+
+.curriculum-light-button{
+  color: #7F002E;
+  box-shadow: 0 0 0 2px #7F002E, 0 0 4px #7F002E;
+}
+
+.curriculum-dark-button{
+  color: #C5CCD2;
+  box-shadow: 0 0 0 2px #C5CCD2, 0 0 4px #C5CCD2;
+}
+
+.name-container{
+  width: 37.5rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.last-name{
+  position: absolute;
+  top: 8rem;
+}
+
+.job{
+  padding-top: 2.4rem;
+  padding-right: .2rem;
+}
+
