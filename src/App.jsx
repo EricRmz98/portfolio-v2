@@ -4,6 +4,9 @@ import curriculumVitae from './docs/Eric Ramirez CV.pdf';
 
 //images
 import me from './assets/me.jpg';
+import cetiLight from './assets/cetiLight.jpg';
+import cetiDark from './assets/cetiDark.png';
+import academloLogo from './assets/academlo.jpg';
 
 function App() {
     const [isThemeDark, setIsThemeDark] = useState(false);
@@ -11,11 +14,11 @@ function App() {
     return (
         <>
             <div
-                className={
+                className={`home-background ${
                     isThemeDark
-                        ? 'home-background home-dark-background'
-                        : 'home-background home-light-background'
-                }
+                        ? 'home-dark-background'
+                        : 'home-light-background'
+                }`}
             >
                 <div className="home-buttons-container">
                     <div className="theme-switch">
@@ -46,11 +49,11 @@ function App() {
                     </div>
 
                     <a
-                        className={
+                        className={`curriculum-button ${
                             isThemeDark
-                                ? 'curriculum-button curriculum-dark-button'
-                                : 'curriculum-button curriculum-light-button'
-                        }
+                                ? 'curriculum-dark-button'
+                                : 'curriculum-light-button'
+                        }`}
                         href={curriculumVitae}
                         download="Eric Ramirez CV"
                     >
@@ -61,7 +64,7 @@ function App() {
                 <div className="name-container">
                     <div className="d-flex jc-between">
                         <h1
-                            className="margin-0"
+                            className="m-0"
                             style={
                                 isThemeDark
                                     ? { color: '#F9FFFF' }
@@ -72,14 +75,14 @@ function App() {
                         </h1>
 
                         <div className="text-end job">
-                            <h2 className="margin-0 green-txt">
+                            <h2 className="m-0 green-txt">
                                 Desarrollador FullStack
                             </h2>
                         </div>
                     </div>
 
                     <h1
-                        className="margin-0 last-name"
+                        className="m-0 last-name"
                         style={
                             isThemeDark
                                 ? { color: '#C5CCD2' }
@@ -92,58 +95,149 @@ function App() {
             </div>
 
             <div
-                className={
+                className={`about-me-background ${
                     isThemeDark
-                        ? 'about-me-background about-me-dark-background'
-                        : 'about-me-background about-me-light-background'
-                }
+                        ? 'about-me-dark-background'
+                        : 'about-me-light-background'
+                }`}
             >
                 <div
                     className="d-flex jc-center ai-center"
                     style={{ height: '100%' }}
                 >
                     <div className="d-flex">
-                        <img className="personal-photo" src={me} />
-                        <div
-                            className={
-                                isThemeDark
-                                    ? 'intro-txt-box dark-txt-box'
-                                    : 'intro-txt-box light-txt-box'
-                            }
-                        >
+                        <img className="personal-photo round" src={me} />
+                        <div>
                             <div
-                                className={
+                                className={`intro-txt-box ${
                                     isThemeDark
-                                        ? 'about-me-dialog-arrow dark-txt-box'
-                                        : 'about-me-dialog-arrow light-txt-box'
-                                }
-                            ></div>
-                            <h2
-                                className={
+                                        ? 'dark-txt-box dark-shadow'
+                                        : 'light-txt-box light-shadow'
+                                }`}
+                            >
+                                <div
+                                    className={`about-me-dialog-arrow ${
+                                        isThemeDark
+                                            ? 'dark-txt-box'
+                                            : 'light-txt-box'
+                                    }`}
+                                ></div>
+                                <h2
+                                    className={`m-0 ${
+                                        isThemeDark
+                                            ? 'dark-title'
+                                            : 'light-title'
+                                    }`}
+                                >
+                                    Hola, soy Eric...
+                                </h2>
+                                <h3
+                                    className={
+                                        isThemeDark ? 'dark-txt' : 'light-txt'
+                                    }
+                                >
+                                    Llevo mas de 3 años formándome como
+                                    desarrollador de software, durante la
+                                    universidad descubrí el desarrollo web y
+                                    quedé maravillado con su vasta aplicación y
+                                    su flexibilidad para ejecutarse en
+                                    prácticamente cualquier dispositivo.
+                                    Disfruto mucho de los retos que se presentan
+                                    durante el desarrollo y me apasiona la
+                                    tecnología.
+                                </h3>
+                            </div>
+                            <div
+                                className={`d-flex jc-around education-box ${
                                     isThemeDark
-                                        ? 'margin-0 dark-title'
-                                        : 'margin-0 light-title'
-                                }
+                                        ? 'dark-txt-box dark-shadow'
+                                        : 'light-txt-box light-shadow'
+                                }`}
                             >
-                                Hola, soy Eric...
-                            </h2>
-                            <h3
-                                className={
-                                    isThemeDark ? 'dark-txt' : 'light-txt'
-                                }
-                            >
-                                Llevo mas de 3 años formándome como
-                                desarrollador de software, durante la
-                                universidad descubrí el desarrollo web y quedé
-                                maravillado con su basta aplicación y su
-                                practicidad para ejecutarse en prácticamente
-                                cualquier dispositivo. Disfruto mucho de los
-                                retos que se presentan durante el desarrollo y
-                                me apasiona la tecnología.
-                            </h3>
+                                <div className="d-flex ai-center">
+                                    <img
+                                        className="education-logo"
+                                        src={isThemeDark ? cetiDark : cetiLight}
+                                    />
+                                    <div>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-txt'
+                                                    : 'light-txt'
+                                            }`}
+                                        >
+                                            CETI
+                                        </p>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-title'
+                                                    : 'light-title'
+                                            }`}
+                                        >
+                                            Ing. Desarrollo de Software
+                                        </p>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-txt'
+                                                    : 'light-txt'
+                                            }`}
+                                        >
+                                            2019 - 2022
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="d-flex ai-center">
+                                    <img
+                                        className="education-logo round"
+                                        src={academloLogo}
+                                    />
+                                    <div>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-txt'
+                                                    : 'light-txt'
+                                            }`}
+                                        >
+                                            Academlo
+                                        </p>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-title'
+                                                    : 'light-title'
+                                            }`}
+                                        >
+                                            Desarrollo Web FullStack
+                                        </p>
+                                        <p
+                                            className={`m-0 ${
+                                                isThemeDark
+                                                    ? 'dark-txt'
+                                                    : 'light-txt'
+                                            }`}
+                                        >
+                                            2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div
+                className={`experience-background ${
+                    isThemeDark
+                        ? 'experience-dark-background'
+                        : 'experience-light-background'
+                }`}
+            >
+                a
             </div>
         </>
     );

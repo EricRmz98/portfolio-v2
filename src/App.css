@@ -89,7 +89,6 @@
 .personal-photo {
     height: 250px;
     width: 250px;
-    border-radius: 50%;
 }
 
 .about-me-dialog-arrow {
@@ -109,4 +108,39 @@
     border-radius: 1rem;
     width: 37rem;
     position: relative;
+}
+
+.education-box {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    width: 37rem;
+}
+
+.education-logo {
+    height: 75px;
+    margin-right: 1rem;
+}
+
+/* experience */
+
+.experience-background {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    z-index: -2;
+    margin-top: 100vh;
+}
+
+.experience-dark-background {
+    background-image: url('./assets/darkWave2.svg');
+    background-color: #090d19;
+}
+
+.experience-light-background {
+    background-image: url('./assets/lightWave2.svg');
+    background-color: #2a0929;
 }

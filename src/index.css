@@ -1,6 +1,6 @@
 :root {
     font-family: 'Karla', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -36,6 +36,7 @@ h2 {
 
 h3 {
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 a {
@@ -44,8 +45,12 @@ a {
 
 /* utility classes */
 
-.margin-0 {
+.m-0 {
     margin: 0;
+}
+
+.mt-120px {
+    margin-top: 120px;
 }
 
 .inline-block {
@@ -64,6 +69,10 @@ a {
     justify-content: center;
 }
 
+.jc-around {
+    justify-content: space-around;
+}
+
 .ai-center {
     align-items: center;
 }
@@ -80,6 +89,10 @@ a {
     text-align: end;
 }
 
+.round {
+    border-radius: 50%;
+}
+
 .green-txt {
     color: #70c1b3;
 }
@@ -93,7 +106,7 @@ a {
 }
 
 .light-txt {
-    color: #52002d;
+    color: #830030;
 }
 
 .dark-txt {
@@ -106,6 +119,14 @@ a {
 
 .dark-title {
     color: #70c1b3;
+}
+
+.light-shadow {
+    box-shadow: 1rem 1rem #fe8049;
+}
+
+.dark-shadow {
+    box-shadow: 1rem 1rem #1d3364;
 }
 
 /* slider */
