@@ -1,85 +1,112 @@
 /* home */
 
-.home-background{
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.home-background {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-.home-light-background{
-  background-image: url('./assets/forestDay.png');
-  background-color: #FFDCC6;
+.home-light-background {
+    background-image: url('./assets/forestDay.png');
+    background-color: #ffdcc6;
 }
 
-.home-dark-background{
-  background-image: url('./assets/forestNight.jpg');
-  background-color: #3154A5;
+.home-dark-background {
+    background-image: url('./assets/forestNight.jpg');
+    background-color: #3154a5;
 }
 
-.home-buttons-container{
-  display: flex;
-  padding-left: 1rem;
+.home-buttons-container {
+    display: flex;
+    padding-left: 1rem;
 }
 
-.theme-switch{
-  display: flex;
-  align-items: center;
+.theme-switch {
+    display: flex;
+    align-items: center;
 }
 
-.theme-switch-icon{
-  margin: 2rem 0 0 0;
-  font-size: 1.5rem;
+.theme-switch-icon {
+    margin: 2rem 0 0 0;
+    font-size: 1.5rem;
 }
 
-.curriculum-button{
-  margin-top: 1.9rem;
-  margin-left: 1rem;
-  padding: .33rem 1rem 0 1rem;
-  border-radius: 1.8rem;
+.curriculum-button {
+    margin-top: 1.9rem;
+    margin-left: 1rem;
+    padding: 0.33rem 1rem 0 1rem;
+    border-radius: 1.8rem;
 }
 
-.curriculum-light-button{
-  color: #7F002E;
-  box-shadow: 0 0 0 2px #7F002E, 0 0 4px #7F002E;
+.curriculum-light-button {
+    color: #7f002e;
+    box-shadow: 0 0 0 2px #7f002e, 0 0 4px #7f002e;
 }
 
-.curriculum-dark-button{
-  color: #C5CCD2;
-  box-shadow: 0 0 0 2px #C5CCD2, 0 0 4px #C5CCD2;
+.curriculum-dark-button {
+    color: #c5ccd2;
+    box-shadow: 0 0 0 2px #c5ccd2, 0 0 4px #c5ccd2;
 }
 
-.name-container{
-  width: 37.5rem;
-  position: relative;
-  margin: 0 auto;
+.name-container {
+    width: 37.5rem;
+    position: relative;
+    margin: 0 auto;
 }
 
-.last-name{
-  position: absolute;
-  top: 8rem;
+.last-name {
+    position: absolute;
+    top: 8rem;
 }
 
-.job{
-  padding-top: 2.4rem;
-  padding-right: .2rem;
+.job {
+    padding-top: 2.4rem;
+    padding-right: 0.2rem;
 }
 
 /* about me */
 
-.about-me-background{
+.about-me-background {
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
+    position: absolute;
+    z-index: -2;
 }
 
-.about-me-dark-background{
-  background-image: url('./assets/darkWave1.svg');
-  background-color: #0C1427;
+.about-me-dark-background {
+    background-image: url('./assets/darkWave1.svg');
+    background-color: #0c1427;
 }
 
-.about-me-light-background{
-  background-image: url('./assets/lightWave1.svg');
-  background-color: #52002D;
+.about-me-light-background {
+    background-image: url('./assets/lightWave1.svg');
+    background-color: #52002d;
+}
+
+.personal-photo {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.about-me-dialog-arrow {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -10px;
+    top: 75px;
+    transform: rotate(45deg);
+    background-color: #3154a5;
+    z-index: -1;
+}
+
+.intro-txt-box {
+    padding: 2rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    width: 37rem;
+    position: relative;
 }
