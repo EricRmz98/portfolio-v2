@@ -26,17 +26,18 @@ body {
 
 h1 {
     font-size: 10rem;
-    font-family: 'Concert One', sans-serif;
 }
 
 h2 {
     font-size: 3.2rem;
-    font-family: 'Fjalla One', sans-serif;
 }
 
 h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
     font-size: 1.6rem;
-    font-weight: 600;
 }
 
 a {
@@ -45,12 +46,56 @@ a {
 
 /* utility classes */
 
+.fjalla-font {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.concert-font {
+    font-family: 'Concert One', sans-serif;
+}
+
+.bevan-font {
+    font-family: 'Bevan', cursive;
+}
+
+.patua-font {
+    font-family: 'Patua One', cursive;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.br-1 {
+    border-radius: 1rem;
+}
+
 .m-0 {
     margin: 0;
 }
 
-.mt-120px {
-    margin-top: 120px;
+.m-1 {
+    margin: 1rem;
+}
+
+.me-05 {
+    margin-right: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.pt-120px {
+    padding-top: 120px;
+}
+
+.width-100 {
+    width: 100%;
 }
 
 .inline-block {
@@ -73,6 +118,10 @@ a {
     justify-content: space-around;
 }
 
+.jc-end {
+    justify-content: end;
+}
+
 .ai-center {
     align-items: center;
 }
@@ -85,8 +134,16 @@ a {
     justify-content: flex-end;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .text-end {
     text-align: end;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .round {
@@ -97,12 +154,16 @@ a {
     color: #70c1b3;
 }
 
-.light-txt-box {
+.light-container {
     background-color: #ffdcc6;
 }
 
-.dark-txt-box {
+.dark-container {
     background-color: #3154a5;
+}
+
+.transparent-black-bg {
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .light-txt {
@@ -119,6 +180,14 @@ a {
 
 .dark-title {
     color: #70c1b3;
+}
+
+.light-section-title {
+    color: #ffdcc6;
+}
+
+.dark-section-title {
+    color: #3154a5;
 }
 
 .light-shadow {
@@ -177,9 +246,3 @@ input:checked + .slider:before {
 input:checked + .slider {
     box-shadow: 0 0 0 2px #c5ccd2, 0 0 8px #c5ccd2;
 }
-
-.Typewriter__cursor {
-    color: #70c1b3;
-}
-
-/* birds */
