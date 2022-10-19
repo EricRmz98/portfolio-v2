@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
 import curriculumVitae from './docs/Eric Ramirez CV.pdf';
 
@@ -19,22 +19,22 @@ import eCommerceApi from './assets/projectImages/eCommerceApi.png';
 import mealsApi from './assets/projectImages/mealsApi.png';
 
 function App() {
-    const [isThemeDark, setIsThemeDark] = useState(false);
+    const [isThemeDark, setIsThemeDark] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
             <div
-                className={`home-background ${
-                    isThemeDark
-                        ? 'home-dark-background'
-                        : 'home-light-background'
+                className={`Navbar ${
+                    isThemeDark ? 'dark-navbar' : 'light-navbar'
                 }`}
             >
                 <div className="home-buttons-container">
                     <div className="theme-switch">
                         <p
-                            className="theme-switch-icon"
-                            style={{ color: '#FE8049' }}
+                            className={`theme-switch-icon ${
+                                isThemeDark ? 'dark-txt' : 'light-txt-alt'
+                            }`}
                         >
                             <i className="fa-solid fa-sun"></i>
                         </p>
@@ -51,8 +51,9 @@ function App() {
                         </label>
 
                         <p
-                            className="theme-switch-icon"
-                            style={{ color: '#090D19' }}
+                            className={`theme-switch-icon ${
+                                isThemeDark ? 'dark-txt' : 'light-txt-alt'
+                            }`}
                         >
                             <i className="fa-solid fa-moon"></i>
                         </p>
@@ -61,8 +62,8 @@ function App() {
                     <a
                         className={`curriculum-button ${
                             isThemeDark
-                                ? 'curriculum-dark-button'
-                                : 'curriculum-light-button'
+                                ? 'dark-curriculum-button'
+                                : 'light-curriculum-button'
                         }`}
                         href={curriculumVitae}
                         download="Eric Ramirez CV"
@@ -71,7 +72,47 @@ function App() {
                         Currículum
                     </a>
                 </div>
+                <div
+                    className={`nav-items ${
+                        isThemeDark ? 'dark-mobile-menu' : 'light-mobile-menu'
+                    } ${isOpen && 'open'}`}
+                >
+                    <a onClick={() => setIsOpen(false)} href="#home">
+                        Home
+                    </a>
+                    <a onClick={() => setIsOpen(false)} href="#about-me">
+                        Acerca de mí
+                    </a>
+                    <a onClick={() => setIsOpen(false)} href="#abilities">
+                        Habilidades
+                    </a>
+                    <a onClick={() => setIsOpen(false)} href="#projects">
+                        Portafolio
+                    </a>
+                    <a onClick={() => setIsOpen(false)} href="#contact">
+                        Contacto
+                    </a>
+                </div>
+                <div
+                    className={`nav-toggle ${isOpen && 'open'}`}
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    {isOpen ? (
+                        <i className="fa-solid fa-x"></i>
+                    ) : (
+                        <i className="fa-solid fa-bars"></i>
+                    )}
+                </div>
+            </div>
 
+            <div
+                id="home"
+                className={`home-background ${
+                    isThemeDark
+                        ? 'home-dark-background'
+                        : 'home-light-background'
+                }`}
+            >
                 <div className="name-container">
                     <div className="d-flex jc-between concert-font">
                         <h1
@@ -86,7 +127,14 @@ function App() {
                         </h1>
 
                         <div className="text-end job">
-                            <h2 className="m-0 green-txt fjalla-font">
+                            <h2
+                                className="m-0 green-txt fjalla-font"
+                                style={
+                                    isThemeDark
+                                        ? { color: '#70c1b3' }
+                                        : { color: '#fe8049' }
+                                }
+                            >
                                 Desarrollador FullStack
                             </h2>
                         </div>
@@ -106,6 +154,7 @@ function App() {
             </div>
 
             <div
+                id="about-me"
                 className={`about-me-background d-flex ai-center jc-center pt-120px ${
                     isThemeDark
                         ? 'about-me-dark-background'
@@ -252,6 +301,7 @@ function App() {
             </div>
 
             <div
+                id="abilities"
                 className={`d-flex jc-center ai-center abilities-background pt-120px ${
                     isThemeDark
                         ? 'abilities-dark-background'
@@ -276,7 +326,7 @@ function App() {
                     </h2>
 
                     <div className="techs-grid ">
-                        <div className="d-flex ai-center br-1 transparent-black-bg">
+                        <div className="tech-container transparent-black-bg">
                             <div
                                 className="tech-background round d-flex jc-center ai-center"
                                 style={{ backgroundColor: '#161424' }}
@@ -306,7 +356,7 @@ function App() {
                             </div>
                         </div>
 
-                        <div className="d-flex ai-center br-1 transparent-black-bg">
+                        <div className="tech-container transparent-black-bg">
                             <div
                                 className="tech-background round d-flex jc-center ai-center"
                                 style={{ backgroundColor: 'white' }}
@@ -338,7 +388,7 @@ function App() {
                             </div>
                         </div>
 
-                        <div className="d-flex ai-center br-1 transparent-black-bg">
+                        <div className="tech-container transparent-black-bg">
                             <div
                                 className="tech-background d-flex jc-center ai-center"
                                 style={{ backgroundColor: '#000000' }}
@@ -357,7 +407,7 @@ function App() {
                             </h3>
                         </div>
 
-                        <div className="d-flex ai-center br-1 transparent-black-bg">
+                        <div className="tech-container transparent-black-bg">
                             <div
                                 className="tech-background tech-background-pt round d-flex jc-center ai-center"
                                 style={{
@@ -384,7 +434,7 @@ function App() {
                             </h3>
                         </div>
 
-                        <div className="d-flex ai-center br-1 transparent-black-bg">
+                        <div className="tech-container transparent-black-bg">
                             <div
                                 className="tech-background tech-background-pt round d-flex jc-center ai-center"
                                 style={{
@@ -402,7 +452,7 @@ function App() {
                                     }}
                                 ></i>
                             </div>
-                            <div>
+                            <div className="tech-text-container">
                                 <h3
                                     className={`m-0 patua-font ${
                                         isThemeDark
@@ -426,6 +476,7 @@ function App() {
             </div>
 
             <div
+                id="projects"
                 className={`portfolio-background d-flex jc-center ai-center pt-120px ${
                     isThemeDark
                         ? 'portfolio-dark-background'
@@ -932,6 +983,7 @@ function App() {
             </div>
 
             <div
+                id="contact"
                 className={`contact-background pt-120px d-flex jc-center ai-center ${
                     isThemeDark
                         ? 'contact-dark-background'
@@ -967,7 +1019,8 @@ function App() {
                                         : 'light-txt light-contact-link'
                                 }`}
                             >
-                                <i class="fa-brands fa-linkedin"></i> linkedIn
+                                <i className="fa-brands fa-linkedin"></i>{' '}
+                                linkedIn
                             </h4>
                         </a>
 
@@ -982,7 +1035,7 @@ function App() {
                                         : 'light-txt light-contact-link'
                                 }`}
                             >
-                                <i class="fa-brands fa-github"></i> Github
+                                <i className="fa-brands fa-github"></i> Github
                             </h4>
                         </a>
 
@@ -997,7 +1050,7 @@ function App() {
                                         : 'light-txt light-contact-link'
                                 }`}
                             >
-                                <i class="fa-solid fa-envelope"></i>{' '}
+                                <i className="fa-solid fa-envelope"></i>{' '}
                                 ericmacias1011@gmail.com
                             </h4>
                         </a>

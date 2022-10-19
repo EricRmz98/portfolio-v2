@@ -170,6 +170,10 @@ a {
     color: #830030;
 }
 
+.light-txt-alt {
+    color: #ffdcc6;
+}
+
 .dark-txt {
     color: #c5ccd2;
 }
@@ -220,7 +224,7 @@ a {
     left: 0;
     right: 0;
     border-radius: 30px;
-    box-shadow: 0 0 0 2px #7f002e, 0 0 4px #7f002e;
+    box-shadow: 0 0 0 2px #ffdcc6, 0 0 4px #ffdcc6;
     cursor: pointer;
     border: 4px solid transparent;
     overflow: hidden;
@@ -232,7 +236,7 @@ a {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #70c1b3;
+    background-color: #ffdcc6;
     border-radius: 30px;
     transform: translateX(-30px); /*translateX(-(w-h))*/
     transition: 0.2s;
@@ -240,7 +244,7 @@ a {
 
 input:checked + .slider:before {
     transform: translateX(30px); /*translateX(w-h)*/
-    background-color: #70c1b3;
+    background-color: #c5ccd2;
 }
 
 input:checked + .slider {
