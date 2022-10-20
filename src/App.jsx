@@ -155,144 +155,134 @@ function App() {
 
             <div
                 id="about-me"
-                className={`about-me-background d-flex ai-center jc-center pt-120px ${
+                className={`about-me-background d-flex jc-center section-padding ${
                     isThemeDark
                         ? 'about-me-dark-background'
                         : 'about-me-light-background'
                 }`}
             >
-                <div className="about-me-container d-flex">
-                    <div className="d-flex" style={{ position: 'relative' }}>
-                        <div
-                            className={`about-me-dialog-arrow ${
-                                isThemeDark
-                                    ? 'dark-container'
-                                    : 'light-container'
-                            }`}
-                        ></div>
+                <div className="about-me-container">
+                    <div className="photo-container">
                         <img className="personal-photo round" src={me} />
-                        <div>
-                            <div
-                                className={`intro-txt-container ${
+                    </div>
+                    <div>
+                        <div
+                            className={`intro-txt-container ${
+                                isThemeDark
+                                    ? 'dark-container dark-shadow'
+                                    : 'light-container light-shadow'
+                            }`}
+                        >
+                            <h2
+                                className={`m-0 bevan-font about-me-title ${
                                     isThemeDark
-                                        ? 'dark-container dark-shadow'
-                                        : 'light-container light-shadow'
+                                        ? 'dark-section-title'
+                                        : 'light-section-title'
                                 }`}
                             >
-                                <h2
-                                    className={`m-0 bevan-font about-me-title ${
-                                        isThemeDark
-                                            ? 'dark-section-title'
-                                            : 'light-section-title'
-                                    }`}
-                                >
-                                    Acerca de Mí
-                                </h2>
-                                <h2
-                                    className={`m-0 patua-font ${
-                                        isThemeDark
-                                            ? 'dark-title'
-                                            : 'light-title'
-                                    }`}
-                                >
-                                    Hola, soy Eric...
-                                </h2>
-                                <h4
-                                    className={
-                                        isThemeDark ? 'dark-txt' : 'light-txt'
-                                    }
-                                >
-                                    Llevo mas de 3 años formándome como
-                                    desarrollador de software, durante la
-                                    universidad descubrí el desarrollo web y
-                                    quedé maravillado con su vasta aplicación y
-                                    su flexibilidad para ejecutarse en
-                                    prácticamente cualquier dispositivo.
-                                    Disfruto mucho de los retos que se presentan
-                                    durante el desarrollo y me apasiona la
-                                    tecnología.
-                                </h4>
-                            </div>
-                            <div
-                                className={`d-flex jc-around education-container ${
-                                    isThemeDark
-                                        ? 'dark-container dark-shadow'
-                                        : 'light-container light-shadow'
+                                Acerca de Mí
+                            </h2>
+                            <h2
+                                className={`m-0 patua-font ${
+                                    isThemeDark ? 'dark-title' : 'light-title'
                                 }`}
                             >
-                                <div className="d-flex ai-center">
-                                    <img
-                                        className="education-logo"
-                                        src={isThemeDark ? cetiDark : cetiLight}
-                                    />
-                                    <div>
-                                        <p
-                                            className={`m-0 patua-font ${
-                                                isThemeDark
-                                                    ? 'dark-txt'
-                                                    : 'light-txt'
-                                            }`}
-                                        >
-                                            CETI
-                                        </p>
-                                        <p
-                                            className={`m-0 ${
-                                                isThemeDark
-                                                    ? 'dark-title'
-                                                    : 'light-title'
-                                            }`}
-                                        >
-                                            Ing. Desarrollo
-                                            <br />
-                                            de Software
-                                        </p>
-                                        <p
-                                            className={`m-0 ${
-                                                isThemeDark
-                                                    ? 'dark-txt'
-                                                    : 'light-txt'
-                                            }`}
-                                        >
-                                            2019 - 2022
-                                        </p>
-                                    </div>
+                                Hola, soy Eric...
+                            </h2>
+                            <h4
+                                className={
+                                    isThemeDark ? 'dark-txt' : 'light-txt'
+                                }
+                            >
+                                Llevo mas de 3 años formándome como
+                                desarrollador de software, durante la
+                                universidad descubrí el desarrollo web y quedé
+                                maravillado con su vasta aplicación y su
+                                flexibilidad para ejecutarse en prácticamente
+                                cualquier dispositivo. Disfruto mucho de los
+                                retos que se presentan durante el desarrollo y
+                                me apasiona la tecnología.
+                            </h4>
+                        </div>
+                        <div
+                            className={`education-container ${
+                                isThemeDark
+                                    ? 'dark-container dark-shadow'
+                                    : 'light-container light-shadow'
+                            }`}
+                        >
+                            <div className="d-flex ai-center">
+                                <img
+                                    className="education-logo"
+                                    src={isThemeDark ? cetiDark : cetiLight}
+                                />
+                                <div>
+                                    <p
+                                        className={`m-0 patua-font ${
+                                            isThemeDark
+                                                ? 'dark-txt'
+                                                : 'light-txt'
+                                        }`}
+                                    >
+                                        CETI
+                                    </p>
+                                    <p
+                                        className={`m-0 ${
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }`}
+                                    >
+                                        Ing. Desarrollo
+                                        <br />
+                                        de Software
+                                    </p>
+                                    <p
+                                        className={`m-0 ${
+                                            isThemeDark
+                                                ? 'dark-txt'
+                                                : 'light-txt'
+                                        }`}
+                                    >
+                                        2019 - 2022
+                                    </p>
                                 </div>
-                                <div className="d-flex ai-center">
-                                    <img
-                                        className="education-logo round"
-                                        src={academloLogo}
-                                    />
-                                    <div>
-                                        <p
-                                            className={`m-0 patua-font ${
-                                                isThemeDark
-                                                    ? 'dark-txt'
-                                                    : 'light-txt'
-                                            }`}
-                                        >
-                                            Academlo
-                                        </p>
-                                        <p
-                                            className={`m-0 ${
-                                                isThemeDark
-                                                    ? 'dark-title'
-                                                    : 'light-title'
-                                            }`}
-                                        >
-                                            Desarrollo Web
-                                            <br />
-                                            FullStack
-                                        </p>
-                                        <p
-                                            className={`m-0 ${
-                                                isThemeDark
-                                                    ? 'dark-txt'
-                                                    : 'light-txt'
-                                            }`}
-                                        >
-                                            2022
-                                        </p>
-                                    </div>
+                            </div>
+                            <div className="d-flex ai-center">
+                                <img
+                                    className="education-logo round"
+                                    src={academloLogo}
+                                />
+                                <div>
+                                    <p
+                                        className={`m-0 patua-font ${
+                                            isThemeDark
+                                                ? 'dark-txt'
+                                                : 'light-txt'
+                                        }`}
+                                    >
+                                        Academlo
+                                    </p>
+                                    <p
+                                        className={`m-0 ${
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }`}
+                                    >
+                                        Desarrollo Web
+                                        <br />
+                                        FullStack
+                                    </p>
+                                    <p
+                                        className={`m-0 ${
+                                            isThemeDark
+                                                ? 'dark-txt'
+                                                : 'light-txt'
+                                        }`}
+                                    >
+                                        2022
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +292,7 @@ function App() {
 
             <div
                 id="abilities"
-                className={`d-flex jc-center ai-center abilities-background pt-120px ${
+                className={`d-flex jc-center abilities-background section-padding  ${
                     isThemeDark
                         ? 'abilities-dark-background'
                         : 'abilities-light-background'
@@ -452,7 +442,7 @@ function App() {
                                     }}
                                 ></i>
                             </div>
-                            <div className="tech-text-container">
+                            <div>
                                 <h3
                                     className={`m-0 patua-font ${
                                         isThemeDark
@@ -477,7 +467,7 @@ function App() {
 
             <div
                 id="projects"
-                className={`portfolio-background d-flex jc-center ai-center pt-120px ${
+                className={`portfolio-background d-flex jc-center section-padding ${
                     isThemeDark
                         ? 'portfolio-dark-background'
                         : 'portfolio-light-background'
@@ -559,13 +549,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card sm-reverse-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center jc-end">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -623,13 +613,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={weather}
                                 className={`project-img ${
@@ -639,7 +629,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -686,13 +676,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card sm-reverse-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center jc-end">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -736,7 +726,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={rickAndMorty}
                                 className={`project-img ${
@@ -749,13 +739,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={quotes}
                                 className={`project-img ${
@@ -765,7 +755,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -812,13 +802,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card sm-reverse-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center jc-end">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -862,7 +852,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={shop2}
                                 className={`project-img ${
@@ -874,13 +864,13 @@ function App() {
                         </div>
                     </div>
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={eCommerceApi}
                                 className={`project-img ${
@@ -890,7 +880,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -928,13 +918,13 @@ function App() {
                     </div>
 
                     <div
-                        className={`project-card mt-2 ${
+                        className={`project-card sm-reverse-card ${
                             isThemeDark
                                 ? 'dark-container dark-shadow'
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center jc-end">
+                        <div className="d-flex ai-center width-100">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -968,7 +958,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="d-flex ai-center width-100">
                             <img
                                 src={mealsApi}
                                 className={`project-img ${
@@ -984,7 +974,7 @@ function App() {
 
             <div
                 id="contact"
-                className={`contact-background pt-120px d-flex jc-center ai-center ${
+                className={`contact-background d-flex jc-center section-padding ${
                     isThemeDark
                         ? 'contact-dark-background'
                         : 'contact-light-background'

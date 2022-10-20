@@ -44,7 +44,56 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 620px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 0.96rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
 /* utility classes */
+
+.section-padding {
+    padding-top: 190px;
+    padding-bottom: 48px;
+}
 
 .fjalla-font {
     font-family: 'Fjalla One', sans-serif;
@@ -200,6 +249,16 @@ a {
 
 .dark-shadow {
     box-shadow: 1rem 1rem #1d3364;
+}
+
+@media (max-width: 620px) {
+    .light-shadow {
+        box-shadow: 0.5rem 0.5rem #fe8049;
+    }
+
+    .dark-shadow {
+        box-shadow: 0.5rem 0.5rem #1d3364;
+    }
 }
 
 /* slider */
