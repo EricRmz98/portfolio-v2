@@ -13,7 +13,6 @@
 
 .dark-navbar {
     background: #1d3364;
-    border-bottom: solid 0.25rem #70c1b3;
     color: #c5ccd2;
 }
 
@@ -26,8 +25,8 @@
 }
 
 .light-navbar {
-    background: #52002d;
-    border-bottom: solid 0.25rem #fe8049;
+    /* background: #52002d; */
+    background-color: #830030;
     color: #ffdcc6;
 }
 

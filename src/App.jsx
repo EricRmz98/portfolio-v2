@@ -194,14 +194,14 @@ function App() {
                                     isThemeDark ? 'dark-txt' : 'light-txt'
                                 }
                             >
-                                Llevo mas de 3 años formándome como
-                                desarrollador de software, durante la
-                                universidad descubrí el desarrollo web y quedé
-                                maravillado con su vasta aplicación y su
-                                flexibilidad para ejecutarse en prácticamente
-                                cualquier dispositivo. Disfruto mucho de los
-                                retos que se presentan durante el desarrollo y
-                                me apasiona la tecnología.
+                                Soy un desarrollador web Fullstack y un
+                                apasionado de la informática, me encanta dar
+                                solución a problemáticas con ayuda de la
+                                tecnología siempre tratando de innovar
+                                proporcionando soluciones de calidad. Busco un
+                                entorno con retos que me permita seguir
+                                desarrollando mis habilidades y creatividad
+                                aplicando nuevas herramientas.
                             </h4>
                         </div>
                         <div
