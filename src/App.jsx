@@ -490,7 +490,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center">
+                        <div className="project-img-container">
                             <img
                                 src={shop1}
                                 className={`project-img ${
@@ -500,7 +500,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -516,9 +516,9 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    react, redux, axios, hook form, react
-                                    router, css, bootstrap, react bootstrap,
-                                    bootswatch
+                                    Inicia sesión y compra variedad de artículos
+                                    electrónicos, visualiza sus imágenes,
+                                    características y productos recomendados.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -555,7 +555,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -571,8 +571,9 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    poke API, react, redux, axios, react router,
-                                    css
+                                    Explora la interminable lista de pokemons de
+                                    todas las generaciones, consulta su tipo,
+                                    estadísticas y movimientos.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -600,7 +601,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center">
+                        <div className="project-img-container">
                             <img
                                 src={pokedex}
                                 className={`project-img ${
@@ -619,7 +620,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={weather}
                                 className={`project-img ${
@@ -629,7 +630,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -645,7 +646,8 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    open weather API, react, axios, css
+                                    Obtén la información actual del estado del
+                                    tiempo con la localización de tu dispositivo
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -682,7 +684,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -698,7 +700,9 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    Rick and Morty API, react, axios, css
+                                    Explora las distintas dimensiones visitadas
+                                    a lo largo de la serie, consulta sus
+                                    habitantes y en que capítulos aparecieron.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -726,7 +730,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={rickAndMorty}
                                 className={`project-img ${
@@ -745,7 +749,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={quotes}
                                 className={`project-img ${
@@ -755,7 +759,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -771,7 +775,8 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    react, css
+                                    Consulta frases celebres al azar de
+                                    distintos personajes históricos importantes.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -808,7 +813,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -824,7 +829,8 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    html, javascript, bootstrap, css
+                                    Añade y elimina productos del carrito de
+                                    compras.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -852,7 +858,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={shop2}
                                 className={`project-img ${
@@ -870,7 +876,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={eCommerceApi}
                                 className={`project-img ${
@@ -880,7 +886,7 @@ function App() {
                                 }`}
                             />
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -896,9 +902,9 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    node.js, bcrypt, dotenv, express, express
-                                    validator, firebase, JSON web token, multer,
-                                    sequelize
+                                    API RESTfull para e-commerce, con CRUD de
+                                    usuarios, productos, categorías y carrito de
+                                    compras
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -924,7 +930,7 @@ function App() {
                                 : 'light-container light-shadow'
                         }`}
                     >
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-info-container">
                             <div className="text-center width-100">
                                 <h3
                                     className={`m-0 patua-font ${
@@ -940,8 +946,9 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    node.js, bcrypt, JSON web token, express,
-                                    express validator, sequelize, dotenv
+                                    API RESTfull básica para plataforma de
+                                    entrega de comida, con CRUD de restaurantes,
+                                    usuarios, platillos y ordenes.
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -958,7 +965,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ai-center width-100">
+                        <div className="project-img-container">
                             <img
                                 src={mealsApi}
                                 className={`project-img ${
