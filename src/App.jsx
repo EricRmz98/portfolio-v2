@@ -519,6 +519,11 @@ function App() {
                                     Inicia sesión y compra variedad de artículos
                                     electrónicos, visualiza sus imágenes,
                                     características y productos recomendados.
+                                    <br />
+                                    <small>
+                                        react | redux | axios | hook-forms |
+                                        react-router | bootstrap | css
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -574,6 +579,11 @@ function App() {
                                     Explora la interminable lista de pokemons de
                                     todas las generaciones, consulta su tipo,
                                     estadísticas y movimientos.
+                                    <br />
+                                    <small>
+                                        react | redux | axios | hook-forms |
+                                        react-router | css
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -648,6 +658,8 @@ function App() {
                                 >
                                     Obtén la información actual del estado del
                                     tiempo con la localización de tu dispositivo
+                                    <br />
+                                    <small>react | css</small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -703,6 +715,8 @@ function App() {
                                     Explora las distintas dimensiones visitadas
                                     a lo largo de la serie, consulta sus
                                     habitantes y en que capítulos aparecieron.
+                                    <br />
+                                    <small>react | css</small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -777,6 +791,8 @@ function App() {
                                 >
                                     Consulta frases celebres al azar de
                                     distintos personajes históricos importantes.
+                                    <br />
+                                    <small>react | css</small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -831,6 +847,8 @@ function App() {
                                 >
                                     Añade y elimina productos del carrito de
                                     compras.
+                                    <br />
+                                    <small>html | css | javascript</small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -905,6 +923,12 @@ function App() {
                                     API RESTfull para e-commerce, con CRUD de
                                     usuarios, productos, categorías y carrito de
                                     compras
+                                    <br />
+                                    <small>
+                                        node.js | express | sequelize |
+                                        posgreSQL | JSON-web-token | bcrypt |
+                                        firebase
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -949,6 +973,11 @@ function App() {
                                     API RESTfull básica para plataforma de
                                     entrega de comida, con CRUD de restaurantes,
                                     usuarios, platillos y ordenes.
+                                    <br />
+                                    <small>
+                                        node.js | express | sequelize |
+                                        posgreSQL | JSON-web-token | bcrypt
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
