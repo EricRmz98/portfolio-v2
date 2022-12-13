@@ -341,7 +341,7 @@ function App() {
                                         isThemeDark ? 'dark-txt' : 'light-txt'
                                     }`}
                                 >
-                                    axios, redux
+                                    Redux, axios
                                 </p>
                             </div>
                         </div>
@@ -520,9 +520,15 @@ function App() {
                                     electrónicos, visualiza sus imágenes,
                                     características y productos recomendados.
                                     <br />
-                                    <small>
-                                        react | redux | axios | hook-forms |
-                                        react-router | bootstrap | css
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        React, Redux, axios, hook-forms,
+                                        React-router, bootstrap, CSS
                                     </small>
                                 </p>
                                 <div className="project-buttons-container">
@@ -580,9 +586,15 @@ function App() {
                                     todas las generaciones, consulta su tipo,
                                     estadísticas y movimientos.
                                     <br />
-                                    <small>
-                                        react | redux | axios | hook-forms |
-                                        react-router | css
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        React, Redux, axios, hook-forms,
+                                        React-router, CSS
                                     </small>
                                 </p>
                                 <div className="project-buttons-container">
@@ -659,7 +671,15 @@ function App() {
                                     Obtén la información actual del estado del
                                     tiempo con la localización de tu dispositivo
                                     <br />
-                                    <small>react | css</small>
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        React, CSS, axios
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -716,7 +736,15 @@ function App() {
                                     a lo largo de la serie, consulta sus
                                     habitantes y en que capítulos aparecieron.
                                     <br />
-                                    <small>react | css</small>
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        React, CSS, axios
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -792,7 +820,15 @@ function App() {
                                     Consulta frases celebres al azar de
                                     distintos personajes históricos importantes.
                                     <br />
-                                    <small>react | css</small>
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        React, CSS
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -848,7 +884,15 @@ function App() {
                                     Añade y elimina productos del carrito de
                                     compras.
                                     <br />
-                                    <small>html | css | javascript</small>
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        HTML, CSS, Javascript, bootstrap
+                                    </small>
                                 </p>
                                 <div className="project-buttons-container">
                                     <a
@@ -924,10 +968,15 @@ function App() {
                                     usuarios, productos, categorías y carrito de
                                     compras
                                     <br />
-                                    <small>
-                                        node.js | express | sequelize |
-                                        posgreSQL | JSON-web-token | bcrypt |
-                                        firebase
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        Node.js, express, sequelize, PosgreSQL,
+                                        JSON web token, bcrypt, Firebase
                                     </small>
                                 </p>
                                 <div className="project-buttons-container">
@@ -974,9 +1023,15 @@ function App() {
                                     entrega de comida, con CRUD de restaurantes,
                                     usuarios, platillos y ordenes.
                                     <br />
-                                    <small>
-                                        node.js | express | sequelize |
-                                        posgreSQL | JSON-web-token | bcrypt
+                                    <small
+                                        className={
+                                            isThemeDark
+                                                ? 'dark-title'
+                                                : 'light-title'
+                                        }
+                                    >
+                                        Node.js, express, sequelize, PosgreSQL,
+                                        JSON web token, bcrypt
                                     </small>
                                 </p>
                                 <div className="project-buttons-container">
