@@ -269,6 +269,12 @@ button:hover {
   }
 }
 
+.non-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* slider */
 
 .switch input {
@@ -291,7 +297,7 @@ button:hover {
   left: 0;
   right: 0;
   border-radius: 30px;
-  box-shadow: 0 0 0 2px #ffdcc6, 0 0 4px #ffdcc6;
+  box-shadow: 0 0 0 2px #52002d, 0 0 4px #52002d;
   cursor: pointer;
   border: 4px solid transparent;
   overflow: hidden;
@@ -303,7 +309,7 @@ button:hover {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #ffdcc6;
+  background-color: #52002d;
   border-radius: 30px;
   transform: translateX(-30px); /*translateX(-(w-h))*/
   transition: 0.2s;

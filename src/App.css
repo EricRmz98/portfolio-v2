@@ -98,7 +98,7 @@
 .home-background {
   padding-top: 4rem;
   height: 100vh;
-  min-height: 700px;
+  min-height: 755px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -115,13 +115,20 @@
   background-color: #3154a5;
 }
 
+.settings-container {
+  margin: 0 auto;
+  width: 36.5rem;
+  height: 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .lang-btn-container {
-  position: absolute;
-  top: 3.3rem;
-  margin-left: 2.2rem;
   display: flex;
   gap: 0.2rem;
   z-index: 1;
+  /* padding-top: 1.9rem; */
 }
 
 .lang-btn {
@@ -143,6 +150,7 @@
 .theme-switch {
   display: flex;
   align-items: center;
+  margin-bottom: 0.3rem;
 }
 
 .theme-switch-icon {
@@ -152,39 +160,40 @@
 
 .curriculum-button {
   font-size: 1.2rem;
-  margin-top: 1.9rem;
-  margin-left: 1rem;
-  padding: 0.35rem 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0.29rem 1rem 0.29rem 1rem;
   font-weight: 800;
   border-radius: 2rem;
-  width: 9rem;
+  width: 9.5rem;
   display: flex;
   justify-content: center;
   gap: 0.2rem;
+  z-index: 1;
 }
 
 .dark-curriculum-button {
-  background-color: #70c1b3;
-  color: #1d3364;
+  background-color: #c5ccd2;
+  color: #3154a5;
 }
 
 .light-curriculum-button {
-  background-color: #fe8049;
-  color: #52002d;
+  background-color: #52002d;
+  color: #ffdcc6;
 }
 
 .dark-curriculum-button:hover {
-  background-color: #c5ccd2;
+  background-color: #70c1b3;
 }
 
 .light-curriculum-button:hover {
-  background-color: #ffdcc6;
+  background-color: #fe8049;
 }
 
 .name-container {
   width: 37.5rem;
   position: relative;
   margin: 0 auto;
+  cursor: default;
 }
 
 .last-name {
@@ -217,8 +226,16 @@
     top: 4rem;
   }
 
-  .curriculum-button {
-    display: none;
+  .settings-container {
+    margin: 0 auto;
+    background-color: red;
+    width: 18.3rem;
+    padding-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
   }
 }
 

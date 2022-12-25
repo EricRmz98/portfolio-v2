@@ -30,44 +30,13 @@ function App() {
   return (
     <>
       <div className={`Navbar ${isThemeDark ? 'dark-navbar' : 'light-navbar'}`}>
-        <div className="home-buttons-container">
-          <div className="theme-switch">
-            <p
-              className={`theme-switch-icon ${
-                isThemeDark ? 'dark-txt' : 'light-txt-alt'
-              }`}
-            >
-              <i className="fa-solid fa-sun"></i>
-            </p>
-
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isThemeDark}
-                onChange={(e) => setIsThemeDark(e.target.checked)}
-              />
-              <span className="slider"></span>
-            </label>
-
-            <p
-              className={`theme-switch-icon ${
-                isThemeDark ? 'dark-txt' : 'light-txt-alt'
-              }`}
-            >
-              <i className="fa-solid fa-moon"></i>
-            </p>
-          </div>
-
-          <a
-            className={`curriculum-button ${
-              isThemeDark ? 'dark-curriculum-button' : 'light-curriculum-button'
-            }`}
-            href={curriculumVitae}
-            download="Eric Ramirez CV"
-          >
-            <i className="fa-solid fa-file-arrow-down"></i>
-            {isSpanish ? 'Currículum' : 'Resume'}
-          </a>
+        <div
+          style={{
+            color: `${isThemeDark ? '#70c1b3' : '#fe8049'}`,
+          }}
+        >
+          <i className="fa-solid fa-cat" style={{ fontSize: '36px' }}></i>
+          <i className="fa-solid fa-fish-fins" style={{ fontSize: '16px' }}></i>
         </div>
         <div
           className={`nav-items ${
@@ -108,35 +77,19 @@ function App() {
           isThemeDark ? 'home-dark-background' : 'home-light-background'
         }`}
       >
-        <div className="lang-btn-container">
-          <button
-            className={`lang-btn ${!isSpanish && 'grayscale'}`}
-            onClick={() => setIsSpanish(true)}
-          >
-            <img src={spain} />
-          </button>
-          <button
-            className={`lang-btn ${isSpanish && 'grayscale'}`}
-            onClick={() => setIsSpanish(false)}
-          >
-            <img src={uk} />
-          </button>
-        </div>
         <div className="name-container">
-          <div className="d-flex jc-between concert-font">
+          <div className="d-flex jc-between concert-font non-select">
             <h1
               className="m-0"
-              style={isThemeDark ? { color: '#F9FFFF' } : { color: '#7F002E' }}
+              style={{ color: `${isThemeDark ? '#F9FFFF' : '#7F002E'}` }}
             >
               ERIC
             </h1>
 
             <div className="text-end job">
               <h2
-                className="m-0 green-txt fjalla-font"
-                style={
-                  isThemeDark ? { color: '#70c1b3' } : { color: '#fe8049' }
-                }
+                className="m-0 green-txt fjalla-font non-select"
+                style={{ color: `${isThemeDark ? '#70c1b3' : '#fe8049'}` }}
               >
                 {isSpanish
                   ? 'Desarrollador FullStack'
@@ -146,11 +99,64 @@ function App() {
           </div>
 
           <h1
-            className="m-0 last-name concert-font"
-            style={isThemeDark ? { color: '#C5CCD2' } : { color: '#52002D' }}
+            className="m-0 last-name concert-font non-select"
+            style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
           >
             RAMÍREZ
           </h1>
+        </div>
+
+        <div className="settings-container">
+          <div className="theme-switch">
+            <p
+              className="theme-switch-icon"
+              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
+            >
+              <i className="fa-solid fa-sun"></i>
+            </p>
+
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={isThemeDark}
+                onChange={(e) => setIsThemeDark(e.target.checked)}
+              />
+              <span className="slider"></span>
+            </label>
+
+            <p
+              className="theme-switch-icon"
+              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
+            >
+              <i className="fa-solid fa-moon"></i>
+            </p>
+          </div>
+
+          <a
+            className={`curriculum-button ${
+              isThemeDark ? 'dark-curriculum-button' : 'light-curriculum-button'
+            }`}
+            href={curriculumVitae}
+            download="Eric Ramirez CV"
+          >
+            <i className="fa-solid fa-file-arrow-down"></i>
+            {isSpanish ? 'Currículum' : 'Resume'}
+          </a>
+
+          <div className="lang-btn-container">
+            <button
+              className={`lang-btn ${!isSpanish && 'grayscale'}`}
+              onClick={() => setIsSpanish(true)}
+            >
+              <img src={spain} />
+            </button>
+            <button
+              className={`lang-btn ${isSpanish && 'grayscale'}`}
+              onClick={() => setIsSpanish(false)}
+            >
+              <img src={uk} />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -187,7 +193,7 @@ function App() {
                 {isSpanish ? 'Hola, soy Eric...' : `Hello I'm Eric...`}
               </h2>
               {isSpanish ? (
-                <h4 className={isThemeDark ? 'dark-txt' : 'light-txt'}>
+                <p className={isThemeDark ? 'dark-txt' : 'light-txt'}>
                   Soy un desarrollador fullstack y un apasionado de la
                   informática, trabajo con tecnologías basadas en JavaScript
                   como React.js, Redux, Node.js y Express para el desarrollo de
@@ -205,9 +211,9 @@ function App() {
                   Lo que mas disfruto de ser desarrollador es aplicar mis
                   conocimientos de manera creativa y el aprendizaje constante
                   impulsado por la curiosidad.
-                </h4>
+                </p>
               ) : (
-                <h4 className={isThemeDark ? 'dark-txt' : 'light-txt'}>
+                <p className={isThemeDark ? 'dark-txt' : 'light-txt'}>
                   I am a fullstack developer and passionate about IT, I work
                   with JavaScript based technologies such as React.js, Redux,
                   Node.js and Express for frontend and backend application
@@ -225,7 +231,7 @@ function App() {
                   What I enjoy most about being a developer is applying my
                   knowledge in a creative way and the continuos learning driven
                   by curiosity.
-                </h4>
+                </p>
               )}
             </div>
             <div
@@ -958,8 +964,8 @@ function App() {
                       isThemeDark ? 'dark-title' : 'light-title'
                     }`}
                   >
-                    Node.js, express, sequelize, PostgreSQL, JSON web token,
-                    bcrypt, Firebase
+                    Node.js, express, sequelize, PostgreSQL, Docker, JSON web
+                    token, bcrypt, Firebase
                   </p>
                 </p>
                 <div className="project-buttons-container">
