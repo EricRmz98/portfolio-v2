@@ -35,8 +35,7 @@ function App() {
             color: `${isThemeDark ? '#70c1b3' : '#fe8049'}`,
           }}
         >
-          <i className="fa-solid fa-cat" style={{ fontSize: '36px' }}></i>
-          <i className="fa-solid fa-fish-fins" style={{ fontSize: '16px' }}></i>
+          <i className="fa-solid fa-cat" style={{ fontSize: '34px' }}></i>
         </div>
         <div
           className={`nav-items ${

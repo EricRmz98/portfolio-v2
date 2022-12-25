@@ -209,6 +209,7 @@
 @media (max-width: 620px) {
   .home-background {
     min-height: 560px;
+    position: relative;
   }
 
   .name-container {
@@ -227,15 +228,12 @@
   }
 
   .settings-container {
-    margin: 0 auto;
-    background-color: red;
-    width: 18.3rem;
-    padding-top: 2rem;
-    height: auto;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 12rem;
   }
 }
 
@@ -257,6 +255,10 @@
 
   .last-name {
     top: 2.5rem;
+  }
+
+  .settings-container {
+    top: 8.5rem;
   }
 }
 
