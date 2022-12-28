@@ -143,8 +143,8 @@ button:hover {
   margin-right: 0.5rem;
 }
 
-.mt-2 {
-  margin-top: 2rem;
+.mb-1d5 {
+  margin-bottom: 1.5rem;
 }
 
 .pt-120px {
@@ -266,6 +266,10 @@ button:hover {
 
   .dark-shadow {
     box-shadow: 0.5rem 0.5rem #1d3364;
+  }
+
+  .mb-1d5 {
+    margin-bottom: 1rem;
   }
 }
 

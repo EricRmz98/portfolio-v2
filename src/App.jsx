@@ -76,6 +76,48 @@ function App() {
           isThemeDark ? 'home-dark-background' : 'home-light-background'
         }`}
       >
+        <div className="settings-container">
+          <div className="theme-switch">
+            <p
+              className="theme-switch-icon"
+              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
+            >
+              <i className="fa-solid fa-sun"></i>
+            </p>
+
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={isThemeDark}
+                onChange={(e) => setIsThemeDark(e.target.checked)}
+              />
+              <span className="slider"></span>
+            </label>
+
+            <p
+              className="theme-switch-icon"
+              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
+            >
+              <i className="fa-solid fa-moon"></i>
+            </p>
+          </div>
+
+          <div className="lang-btn-container">
+            <button
+              className={`lang-btn ${!isSpanish && 'grayscale'}`}
+              onClick={() => setIsSpanish(true)}
+            >
+              <img src={spain} />
+            </button>
+            <button
+              className={`lang-btn ${isSpanish && 'grayscale'}`}
+              onClick={() => setIsSpanish(false)}
+            >
+              <img src={uk} />
+            </button>
+          </div>
+        </div>
+
         <div className="name-container">
           <div className="d-flex jc-between concert-font non-select">
             <h1
@@ -103,59 +145,6 @@ function App() {
           >
             RAMÍREZ
           </h1>
-        </div>
-
-        <div className="settings-container">
-          <div className="theme-switch">
-            <p
-              className="theme-switch-icon"
-              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
-            >
-              <i className="fa-solid fa-sun"></i>
-            </p>
-
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={isThemeDark}
-                onChange={(e) => setIsThemeDark(e.target.checked)}
-              />
-              <span className="slider"></span>
-            </label>
-
-            <p
-              className="theme-switch-icon"
-              style={{ color: `${isThemeDark ? '#C5CCD2' : '#52002D'}` }}
-            >
-              <i className="fa-solid fa-moon"></i>
-            </p>
-          </div>
-
-          <a
-            className={`curriculum-button ${
-              isThemeDark ? 'dark-curriculum-button' : 'light-curriculum-button'
-            }`}
-            href={curriculumVitae}
-            download="Eric Ramirez CV"
-          >
-            <i className="fa-solid fa-file-arrow-down"></i>
-            {isSpanish ? 'Currículum' : 'Resume'}
-          </a>
-
-          <div className="lang-btn-container">
-            <button
-              className={`lang-btn ${!isSpanish && 'grayscale'}`}
-              onClick={() => setIsSpanish(true)}
-            >
-              <img src={spain} />
-            </button>
-            <button
-              className={`lang-btn ${isSpanish && 'grayscale'}`}
-              onClick={() => setIsSpanish(false)}
-            >
-              <img src={uk} />
-            </button>
-          </div>
         </div>
       </div>
 
@@ -192,7 +181,9 @@ function App() {
                 {isSpanish ? 'Hola, soy Eric...' : `Hello I'm Eric...`}
               </h2>
               {isSpanish ? (
-                <p className={isThemeDark ? 'dark-txt' : 'light-txt'}>
+                <p
+                  className={`mb-1d5 ${isThemeDark ? 'dark-txt' : 'light-txt'}`}
+                >
                   Soy un desarrollador fullstack y un apasionado de la
                   informática, trabajo con tecnologías basadas en JavaScript
                   como React.js, Redux, Node.js y Express para el desarrollo de
@@ -212,7 +203,9 @@ function App() {
                   impulsado por la curiosidad.
                 </p>
               ) : (
-                <p className={isThemeDark ? 'dark-txt' : 'light-txt'}>
+                <p
+                  className={`mb-1d5 ${isThemeDark ? 'dark-txt' : 'light-txt'}`}
+                >
                   I am a fullstack developer and passionate about IT, I work
                   with JavaScript based technologies such as React.js, Redux,
                   Node.js and Express for frontend and backend application
@@ -232,6 +225,17 @@ function App() {
                   by curiosity.
                 </p>
               )}
+
+              <a
+                className={`link-btn ${
+                  isThemeDark ? 'link-btn-dark' : 'link-btn-light'
+                }`}
+                href={curriculumVitae}
+                download="Eric Ramirez CV"
+              >
+                <i className="fa-solid fa-file-arrow-down"></i>
+                {isSpanish ? ' Currículum' : ' Resume'}
+              </a>
             </div>
             <div
               className={`education-container ${

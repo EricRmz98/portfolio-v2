@@ -116,12 +116,13 @@
 }
 
 .settings-container {
-  margin: 0 auto;
-  width: 36.5rem;
-  height: 9.5rem;
+  width: 100%;
   display: flex;
+  padding: 0 1rem;
   justify-content: space-between;
   align-items: flex-end;
+  position: absolute;
+  top: 2rem;
 }
 
 .lang-btn-container {
@@ -158,41 +159,11 @@
   font-size: 1.5rem;
 }
 
-.curriculum-button {
-  font-size: 1.2rem;
-  margin-bottom: 0.2rem;
-  padding: 0.29rem 1rem 0.29rem 1rem;
-  font-weight: 800;
-  border-radius: 2rem;
-  width: 9.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.2rem;
-  z-index: 1;
-}
-
-.dark-curriculum-button {
-  background-color: #c5ccd2;
-  color: #3154a5;
-}
-
-.light-curriculum-button {
-  background-color: #52002d;
-  color: #ffdcc6;
-}
-
-.dark-curriculum-button:hover {
-  background-color: #70c1b3;
-}
-
-.light-curriculum-button:hover {
-  background-color: #fe8049;
-}
-
 .name-container {
   width: 37.5rem;
   position: relative;
   margin: 0 auto;
+  margin-top: 1rem;
   cursor: default;
 }
 
@@ -208,7 +179,7 @@
 
 @media (max-width: 620px) {
   .home-background {
-    min-height: 560px;
+    min-height: 600px;
     position: relative;
   }
 
@@ -216,6 +187,7 @@
     width: 18.8rem;
     position: relative;
     margin: 0 auto;
+    margin-top: 2.5rem;
   }
 
   .job {
@@ -226,26 +198,18 @@
   .last-name {
     top: 4rem;
   }
-
-  .settings-container {
-    width: 100%;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    position: absolute;
-    top: 12rem;
-  }
 }
 
 @media (max-width: 320px) {
   .home-background {
-    min-height: 510px;
+    min-height: 585px;
   }
 
   .name-container {
     width: 11.4rem;
     position: relative;
     margin: 0 auto;
+    margin-top: 3.1rem;
   }
 
   .job {
@@ -255,10 +219,6 @@
 
   .last-name {
     top: 2.5rem;
-  }
-
-  .settings-container {
-    top: 8.5rem;
   }
 }
 
@@ -676,6 +636,10 @@
   .portfolio-title {
     top: -1.8rem;
     left: 0.5rem;
+  }
+
+  .link-btn {
+    font-size: 0.7rem;
   }
 }
 
