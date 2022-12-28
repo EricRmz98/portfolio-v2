@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import './App.css';
-import curriculumVitae from './docs/Eric Ramirez CV.pdf';
+
+//docs
+import curriculumVitae from './docs/Eric Ramirez CV FullStack.pdf';
 
 //logos
 import me from './assets/me.jpg';
