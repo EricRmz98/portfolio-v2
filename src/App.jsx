@@ -553,7 +553,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/re6-e-commerce"
+                    href="https://github.com/EricRmz98/re6-e-commerce"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -617,7 +617,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/re5-pokedex"
+                    href="https://github.com/EricRmz98/re5-pokedex"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -700,7 +700,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/re2-weather"
+                    href="https://github.com/EricRmz98/re2-weather"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -765,7 +765,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/re3-rickandmortylocations"
+                    href="https://github.com/EricRmz98/re3-rickandmortylocations"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -848,7 +848,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/re1-quotes"
+                    href="https://github.com/EricRmz98/re1-quotes"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -905,7 +905,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/shopping-cart"
+                    href="https://github.com/EricRmz98/shopping-cart"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -978,7 +978,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/no5-e-commerce"
+                    href="https://github.com/EricRmz98/no5-e-commerce"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -1032,7 +1032,7 @@ function App() {
                     className={`link-btn ${
                       isThemeDark ? 'link-btn-dark' : 'link-btn-light'
                     }`}
-                    href="https://github.com/TamalRojo/no3-meals"
+                    href="https://github.com/EricRmz98/no3-meals"
                     target="_blank"
                   >
                     <i className="fa-brands fa-github"></i>{' '}
@@ -1095,7 +1095,7 @@ function App() {
 
             <a
               className="contact-link"
-              href="https://github.com/TamalRojo"
+              href="https://github.com/EricRmz98"
               target="_blank"
             >
               <h4
