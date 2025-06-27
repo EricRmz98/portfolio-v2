@@ -228,16 +228,16 @@ function App() {
                 </p>
               )}
 
-              <a
-                className={`link-btn ${
-                  isThemeDark ? 'link-btn-dark' : 'link-btn-light'
-                }`}
-                href={curriculumVitae}
-                download="Eric Ramirez CV"
-              >
-                <i className="fa-solid fa-file-arrow-down"></i>
-                {isSpanish ? ' Currículum' : ' Resume'}
-              </a>
+              {/* 
+<a
+  className={`link-btn ${isThemeDark ? 'link-btn-dark' : 'link-btn-light'}`}
+  href={curriculumVitae}
+  download="Eric Ramirez CV"
+>
+  <i className="fa-solid fa-file-arrow-down"></i>
+  {isSpanish ? ' Currículum' : ' Resume'}
+</a>
+*/}
             </div>
             <div
               className={`education-container ${
